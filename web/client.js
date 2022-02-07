@@ -102,7 +102,8 @@ let str_nocomma100;
 let myArray0 = [];
 let str0;
 let str_nocomma0;
-
+let diminuzione = 2;
+let volume_aumento = 1;
 let mic;
 let voice;
 let recording; //it stores what i m saying
@@ -172,10 +173,12 @@ function showResult() {
       punteggio_personale = punteggio_personale + punteggio;
       punteggio_oggi = punteggio_oggi + punteggio;
 
-      insulti[i].punteggio = insulti[i].punteggio - 110;
-      insulti_nocensura[i].punteggio = insulti_nocensura[i].punteggio - 110;
-      insulti[i].volume = insulti[i].volume + 111;
-      insulti_nocensura[i].volume = insulti_nocensura[i].volume + 111;
+      insulti[i].punteggio = insulti[i].punteggio - diminuzione;
+      insulti_nocensura[i].punteggio =
+        insulti_nocensura[i].punteggio - diminuzione;
+      insulti[i].volume = insulti[i].volume + volume_aumento;
+      insulti_nocensura[i].volume =
+        insulti_nocensura[i].volume + volume_aumento;
       console.log("volume", insulti_nocensura[i].volume);
       /*faccio arrivare il punteggio al minimo 0*/
       if (insulti[i].punteggio < 0) {
