@@ -391,3 +391,9 @@ video {
     line-height: 1.6rem;
   }
 }
+/*Cambio posizione video in mobile*/
+@media (max-width: 45em) {
+  .section1 {
+    margin-top: 2rem;
+  }
+}
