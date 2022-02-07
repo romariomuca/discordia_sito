@@ -1,6 +1,8 @@
 //definisco variabili globali
 let clrR2 = "#b22423";
 let clrR1 = "#d61f1d";
+//let clrR1 = "#db2727";
+
 let myFontDot;
 let myFontMain;
 
@@ -102,7 +104,7 @@ let str_nocomma100;
 let myArray0 = [];
 let str0;
 let str_nocomma0;
-let diminuzione = 2;
+let diminuzione = 26;
 let volume_aumento = 1;
 let mic;
 let voice;
@@ -110,7 +112,7 @@ let recording; //it stores what i m saying
 let data;
 let insulti;
 let insulti_nocensura;
-let punteggio_personale = 666;
+let punteggio_personale = 14360;
 let punteggio_oggi = 0;
 let posizione = 7;
 let myArray = [];
@@ -374,6 +376,8 @@ function draw() {
   rect(0, 54 + distanza_titolo + 270, 400, 20);
 
   //disegno classifica
+  strokeWeight(0.3);
+  stroke(clrR1);
   fill(clrR1);
   text("1.  " + top0, 0, 70 + distanza_titolo);
   text("2.  " + top1, 0, 100 + distanza_titolo);
@@ -386,6 +390,7 @@ function draw() {
   text("9.  " + top8, 0, 310 + distanza_titolo);
   text("10. " + top9, 0, 340 + distanza_titolo);
   //disegno punteggi
+  strokeWeight(0);
   fill("white");
   text(top0P, 0 + 250, 70 + distanza_titolo);
   text(top1P, 0 + 250, 100 + distanza_titolo);
@@ -420,6 +425,8 @@ var sketch = function (p1) {
   //funzione draw
   p1.draw = function () {
     p1.background("black");
+    p1.strokeWeight(0.3);
+    p1.stroke(clrR1);
     p1.textFont(myFontDot);
     p1.textSize(33);
     p1.fill(clrR2);
@@ -583,11 +590,14 @@ var sketch4 = function (p4) {
     p4.rect(0, 54 + 60, 400, 20);
     p4.rect(0, 54 + 90, 400, 20);
     /*FACCIO SCRITTE */
+    p4.strokeWeight(0.3);
+    p4.stroke(clrR1);
     p4.textFont(myFontDot);
     p4.textSize(20);
     p4.fill("red");
     p4.text("1X VERBERO", 0, 70);
     p4.text("1X SMILE 1E BALACLAVA", 0, 70 + 30);
+    p4.strokeWeight(0);
     p4.fill("white");
     p4.text("TOTAL:", 250, 70 + 30 + +30 + 30);
 
