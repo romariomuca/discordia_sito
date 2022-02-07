@@ -1,0 +1,388 @@
+{
+  "numero": 55,
+  "insulti": [
+    {
+      "insulto": "cagna",
+      "punteggio": 992,
+      "volume": 0,
+      "gain": 0,
+      "loss": 0
+    },
+    {
+      "insulto": "p******",
+      "punteggio": 984,
+      "volume": 0,
+      "gain": 0,
+      "loss": 0
+    },
+    {
+      "insulto": "scimmia",
+      "punteggio": 956,
+      "volume": 0,
+      "gain": 0,
+      "loss": 0
+    },
+    {
+      "insulto": "t****",
+      "punteggio": 945,
+      "volume": 0,
+      "gain": 0,
+      "loss": 0
+    },
+    {
+      "insulto": "f*****",
+      "punteggio": 932,
+      "volume": 0,
+      "gain": 0,
+      "loss": 0
+    },
+    {
+      "insulto": "succhia c****",
+      "punteggio": 893,
+      "volume": 0,
+      "gain": 0,
+      "loss": 0
+    },
+    {
+      "insulto": "z******",
+      "punteggio": 876,
+      "volume": 0,
+      "gain": 0,
+      "loss": 0
+    },
+    {
+      "insulto": "piglia in c***",
+      "punteggio": 863,
+      "volume": 0,
+      "gain": 0,
+      "loss": 0
+    },
+    {
+      "insulto": "m*******",
+      "punteggio": 852,
+      "volume": 0,
+      "gain": 0,
+      "loss": 0
+    },
+    {
+      "insulto": "r********",
+      "punteggio": 841,
+      "volume": 0
+    },
+    {
+      "insulto": "vacca",
+      "punteggio": 750,
+      "volume": 0
+    },
+    {
+      "insulto": "balena",
+      "punteggio": 725,
+      "volume": 0
+    },
+    {
+      "insulto": "finocchio",
+      "punteggio": 723,
+      "volume": 0,
+      "gain": 0,
+      "loss": 0
+    },
+    {
+      "insulto": "parassita",
+      "punteggio": 713,
+      "volume": 0,
+      "gain": 0,
+      "loss": 0
+    },
+    {
+      "insulto": "contro natura",
+      "punteggio": 710,
+      "volume": 0,
+      "gain": 0,
+      "loss": 0
+    },
+    {
+      "insulto": "negro",
+      "punteggio": 708,
+      "volume": 0,
+      "gain": 0,
+      "loss": 0
+    },
+    {
+      "insulto": "checca",
+      "punteggio": 699,
+      "volume": 0,
+      "gain": 0,
+      "loss": 0
+    },
+    {
+      "insulto": "c********",
+      "punteggio": 695,
+      "volume": 0,
+      "gain": 0,
+      "loss": 0
+    },
+    {
+      "insulto": "b********",
+      "punteggio": 691,
+      "volume": 0,
+      "gain": 0,
+      "loss": 0
+    },
+    {
+      "insulto": "minorato",
+      "punteggio": 689,
+      "volume": 0,
+      "gain": 0,
+      "loss": 0
+    },
+    {
+      "insulto": "muso giallo",
+      "punteggio": 684,
+      "volume": 0,
+      "gain": 0,
+      "loss": 0
+    },
+    {
+      "insulto": "down",
+      "punteggio": 592,
+      "volume": 0,
+      "gain": 0,
+      "loss": 0
+    },
+
+    {
+      "insulto": "invertito",
+      "punteggio": 586,
+      "volume": 0,
+      "gain": 0,
+      "loss": 0
+    },
+
+    {
+      "insulto": "cesso",
+      "punteggio": 584,
+      "volume": 0,
+      "gain": 0,
+      "loss": 0
+    },
+    {
+      "insulto": "ritardato",
+      "punteggio": 581,
+      "volume": 0,
+      "gain": 0,
+      "loss": 0
+    },
+    {
+      "insulto": "mongoloide",
+      "punteggio": 579,
+      "volume": 0,
+      "gain": 0,
+      "loss": 0
+    },
+    {
+      "insulto": "storpio",
+      "punteggio": 578,
+      "volume": 0,
+      "gain": 0,
+      "loss": 0
+    },
+    {
+      "insulto": "ciccione",
+      "punteggio": 577,
+      "volume": 0,
+      "gain": 0,
+      "loss": 0
+    },
+    {
+      "insulto": "sgualdrina",
+      "punteggio": 513,
+      "volume": 0,
+      "gain": 0,
+      "loss": 0
+    },
+    {
+      "insulto": "handicappato",
+      "punteggio": 484,
+      "volume": 0,
+      "gain": 0,
+      "loss": 0
+    },
+    {
+      "insulto": "roito",
+      "punteggio": 475,
+      "volume": 0,
+      "gain": 0,
+      "loss": 0
+    },
+    {
+      "insulto": "menomato",
+      "punteggio": 469,
+      "volume": 0,
+      "gain": 0,
+      "loss": 0
+    },
+    {
+      "insulto": "obeso",
+      "punteggio": 456,
+      "volume": 0,
+      "gain": 0,
+      "loss": 0
+    },
+
+    {
+      "insulto": "donna facile",
+      "punteggio": 446,
+      "volume": 0,
+      "gain": 0,
+      "loss": 0
+    },
+    {
+      "insulto": "zingaro",
+      "punteggio": 437,
+      "volume": 0,
+      "gain": 0,
+      "loss": 0
+    },
+    {
+      "insulto": "ladro",
+      "punteggio": 412,
+      "volume": 0,
+      "gain": 0,
+      "loss": 0
+    },
+    {
+      "insulto": "nano",
+      "punteggio": 393,
+      "volume": 0,
+      "gain": 0,
+      "loss": 0
+    },
+    {
+      "insulto": "gobbo",
+      "punteggio": 387,
+      "volume": 0,
+      "gain": 0,
+      "loss": 0
+    },
+    {
+      "insulto": "terrone",
+      "punteggio": 358,
+      "volume": 0,
+      "gain": 0,
+      "loss": 0
+    },
+    {
+      "insulto": "deficiente",
+      "punteggio": 343,
+      "volume": 0,
+      "gain": 0,
+      "loss": 0
+    },
+    {
+      "insulto": "tappo",
+      "punteggio": 328,
+      "volume": 0,
+      "gain": 0,
+      "loss": 0
+    },
+
+    {
+      "insulto": "idiota",
+      "punteggio": 305,
+      "volume": 0,
+      "gain": 0,
+      "loss": 0
+    },
+    {
+      "insulto": "bagascia",
+      "punteggio": 297,
+      "volume": 0,
+      "gain": 0,
+      "loss": 0
+    },
+    {
+      "insulto": "crucco",
+      "punteggio": 280,
+      "volume": 0,
+      "gain": 0,
+      "loss": 0
+    },
+    {
+      "insulto": "analfabeta",
+      "punteggio": 272,
+      "volume": 0,
+      "gain": 0,
+      "loss": 0
+    },
+    {
+      "insulto": "dislessico",
+      "punteggio": 228,
+      "volume": 0,
+      "gain": 0,
+      "loss": 0
+    },
+    {
+      "insulto": "cretino",
+      "punteggio": 212,
+      "volume": 0,
+      "gain": 0,
+      "loss": 0
+    },
+    {
+      "insulto": "ignorante",
+      "punteggio": 205,
+      "volume": 0,
+      "gain": 0,
+      "loss": 0
+    },
+    {
+      "insulto": "rom",
+      "punteggio": 198,
+      "volume": 0,
+      "gain": 0,
+      "loss": 0
+    },
+    {
+      "insulto": "polentone",
+      "punteggio": 164,
+      "volume": 0,
+      "gain": 0,
+      "loss": 0
+    },
+    {
+      "insulto": "spilungone",
+      "punteggio": 160,
+      "volume": 0,
+      "gain": 0,
+      "loss": 0
+    },
+    {
+      "insulto": "immigrato",
+      "punteggio": 131,
+      "volume": 0,
+      "gain": 0,
+      "loss": 0
+    },
+    {
+      "insulto": "gay",
+      "punteggio": 87,
+      "volume": 0,
+      "gain": 0,
+      "loss": 0
+    },
+    {
+      "insulto": "extracomunitario",
+      "punteggio": 72,
+      "volume": 0,
+      "gain": 0,
+      "loss": 0
+    },
+    {
+      "insulto": "di colore",
+      "punteggio": 23,
+      "volume": 0,
+      "gain": 0,
+      "loss": 0
+    }
+  ]
+}

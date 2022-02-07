@@ -1,0 +1,362 @@
+/* https://www.w3schools.com/howto/howto_css_topnav_centered.asp
+https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp
+http://www.w3bai.com/it/howto/tryit.php?filename=tryhow_js_topnav
+https://stackoverflow.com/questions/45847392/pure-css-continuous-horizontal-text-scroll-without-break 
+https://codepen.io/iskadar/pen/zLQjLe   text loop
+https://stackoverflow.com/questions/13426875/text-border-using-css-border-around-text text border
+https://nishanc.medium.com/how-to-add-a-gif-pre-loader-to-your-website-dcfd29bd055d loader
+*/
+@font-face {
+  font-family: DrukText;
+  font-weight: normal;
+  src: url("assets2/font/DrukText-Medium.otf") format("opentype");
+}
+
+@font-face {
+  font-family: DrukText;
+  font-weight: heavy;
+  src: url("assets2/font/DrukText-heavy.otf") format("opentype");
+}
+@font-face {
+  font-family: DrukWide;
+  font-weight: bold;
+  src: url("assets2/font/DrukWide-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: DotText;
+  src: url("assets/dot.ttf") format("opentype");
+}
+/*ADD CUSTOM PROPRIETIES*/
+:root {
+  --clr-red-200: #b22423;
+  --clr-red-100: #d61f1d;
+
+  --clr-neutral-100: #fff;
+  --clr-neutral-900: #000;
+
+  --ff-primary: "DrukText", sans-serif;
+  --ff-logotipo: "DrukWide", sans-serif;
+  --ff-loop: "DotText", sans-serif;
+}
+/*x avere footer fisso basso*/
+html {
+  height: 100%;
+}
+body {
+  font-family: var(--ff-primary);
+  font-weight: normal;
+  /*x avere footer fisso basso*/
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.footer_basso {
+  margin-top: auto;
+}
+* {
+  /*cambio cursore*/
+  cursor: crosshair;
+
+  margin: 0;
+  padding: 0;
+  color: var(--clr-neutral-100);
+}
+/*MENU*/
+li {
+  font-family: var(--ff-primary);
+  font-size: 16px;
+}
+a {
+  text-decoration: none;
+}
+header {
+  clear: both; /*cosi non viene influneznato dalla foto sotto*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 4%;
+  padding-left: 4%;
+}
+.nav_links {
+  list-style: none;
+}
+.nav_links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+a:hover {
+  color: var(--clr-red-200);
+}
+.icon {
+  fill: white;
+  padding-right: 1rem; /*sistemo spazio tra le icone*/
+}
+.icon:hover {
+  fill: var(--clr-red-200);
+}
+.logotipo {
+  font-family: var(--ff-logotipo);
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+.invisible {
+  visibility: hidden;
+}
+.fisso {
+  position: fixed;
+  width: 100%;
+  z-index: 998;
+}
+
+/*NUOVO MENU A TENDINA*/
+/*modifico il nav toggle */
+.nav-toggle {
+  visibility: hidden;
+  /*non mostro il checbox*/
+}
+/*RESPONSIVE MEDIA QUERY HEADER*/ /*quando al massimo la larghezza diventa 40 em o meno allora fai sta cosa*/
+@media (max-width: 45em) {
+  header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: right;
+    padding-right: 0;
+    padding-left: 0;
+  }
+  /*qua dentro creo le tre linee x il navbar*/
+  .nav_links li {
+    display: block;
+    padding: 0px 0.5rem;
+  }
+  .invisible {
+    visibility: hidden;
+    display: none;
+  }
+  /*modifico il nav toggle */
+  .nav-toggle {
+    display: none; /*non mostro il checbox*/
+  }
+  /*sposto la posizione delle tre lineette*/
+  .nav-toggle-lable {
+    position: absolute;
+    top: 1.6rem; /*distanza dall'alto del menu hamburger*/
+    left: 0;
+    margin-left: 1em; /*dò lo stesso margine degli li*/
+    /*   border: 1px solid red; */
+    /*x centrare la x nel suo box*/
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  /*seleziono lo span dentro il lable con le tre linee e il suo before l'attivazione e l'after*/
+  .nav-toggle-lable span,
+  .nav-toggle-lable span::before,
+  .nav-toggle-lable span::after {
+    display: inline-block;
+    background: white;
+    height: 2.4px; /*spessore hamburger*/
+    width: 1.4em;
+    border-radius: 2px;
+    position: relative;
+  }
+  .nav-toggle-lable span::before,
+  .nav-toggle-lable span::after {
+    content: ""; /*x aggiungere le tre linee*/
+    position: absolute;
+  }
+  .nav-toggle-lable span::before {
+    /*before è la linetta sopra*/
+    bottom: 7px;
+  }
+  .nav-toggle-lable span::after {
+    /*after è la linetta sotto*/
+    top: 7px;
+  }
+  nav {
+    position: absolute;
+    text-align: left;
+    top: 6rem; /*così si posizione altezza delle scritte dopo che clicco le tre lineette*/
+    left: 0;
+    /* background-color: var(--clr-red-200); */
+    /*aggiungo colore background*/
+    /*     width: 100%;
+ */
+    display: none; /*scompare*/
+  }
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  nav li {
+    margin-bottom: 0.8em; /*spazio che c'è tra ogni elemento della lista*/
+    margin-left: 0.6em; /*spazio che c'è con la parte sinistra*/
+  }
+  nav a {
+    color: var(--clr-neutral-200);
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  nav a:hover {
+    color: var(--clr-red-200);
+  }
+
+  /*aggiungo toggle animation*/
+  .nav-toggle:checked ~ nav {
+    /*se il checkbox è chacked e poi cerca il primo nav fratello dopo il checkbox*/
+    display: block;
+  }
+  /*cambio colore hamburger quando clicco*/
+  .nav-toggle:checked ~ .nav-toggle-lable span {
+    background: var(--clr-red-200);
+  }
+  .nav-toggle:checked ~ .nav-toggle-lable span::before {
+    background: var(--clr-red-200);
+  }
+  .nav-toggle:checked ~ .nav-toggle-lable span::after {
+    background: var(--clr-red-100);
+  }
+}
+
+/*FACCIO SCRITTE CONTINUE*/
+/*NUOVO LOOP*/
+#rssBlock {
+  background: var(--clr-neutral-100);
+  position: static;
+  overflow: hidden;
+}
+
+/*remove p*/
+.cnnContents {
+  white-space: nowrap;
+  font-family: var(--ff-loop);
+}
+
+.marqueeStyle {
+  color: black;
+  -webkit-text-stroke-width: 0.03rem;
+  -webkit-text-stroke-color: rgb(0, 0, 0);
+
+  display: inline-block;
+  /* Apply animation to this element */
+  animation: scrolling-left1 10s linear infinite;
+}
+
+.marqueeStyle2 {
+  color: var(--clr-neutral-900);
+  /*Aggiungo bordo al testo x renderlo più leggibile*/
+  -webkit-text-stroke-width: 0.03rem;
+  -webkit-text-stroke-color: var(--clr-neutral-900);
+  display: inline-block;
+  /* Apply animation to this element */
+  animation: scrolling-left2 10s linear infinite;
+  /*   animation-delay: 10s;
+ */
+}
+/* scrolling-left is continuous/repeatly text */
+@keyframes scrolling-left1 {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-110.4%);
+  }
+}
+@keyframes scrolling-left2 {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-110.4%);
+  }
+}
+
+/*FOOTER*/
+#footer {
+  margin-top: 1rem;
+  clear: both; /*cosi non viene influneznato dalla foto sopra*/
+  /* Height of the footer*/
+  background: rgb(0, 0, 0);
+  text-align: center;
+  padding: 1rem;
+}
+.paragrafo_footer {
+  margin-bottom: 1%;
+}
+
+/*faccio barra di scorrimento*/
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--clr-neutral-900);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--clr-neutral-900);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--clr-red-200);
+}
+
+/*Sistemo punteggio*/
+.invisibile {
+  display: none;
+  visibility: hidden;
+}
+/*SISTEMO SEZIONE LATEST UNLOCK*/
+img {
+  display: block; /**/
+  max-width: 100%; /*non possono diventare più grandi del 100 % della loro grandezza ma possono rimpicciolire*/
+}
+/*aggiungo prodotti*/
+.sezione1 {
+  margin-top: 7rem;
+  /*   padding: 1rem 1rem;
+ */
+}
+.testo-centrato {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.split3 {
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  align-items: center;
+  justify-content: space-evenly;
+}
+/*RESPONSIVE MEDIA QUERY quando al minimo è 80 e piu grande*/
+@media (min-width: 80em) {
+  .split3 {
+    flex-direction: row;
+  }
+}
+.details p {
+  text-align: center;
+}
+.titolo-prodotto {
+  font-size: 2.5rem;
+  color: var(--clr-red-200);
+}
+.sezione2 {
+  margin-top: 2rem;
+  /*   padding: 1rem 1rem;
+ */
+}
+/*accendo il link che sto visitando*/
+.current {
+  color: var(--clr-red-200);
+}
