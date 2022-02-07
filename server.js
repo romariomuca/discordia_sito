@@ -4,7 +4,7 @@ const fs = require("fs"); // il modulo "file system" (fs) permette a node di usa
 const path = require("path"); // il modulo path aiuta a leggere dove stanno i file a partire dagli url
 
 // Su che porta verrà creato il server?
-const port = 8000;
+const port = process.env.PORT || 8000;
 // lista delle estensioni file che il server saprà riconoscere (per il tutotrial ne serviranno di fatto solo alcuni)
 const mimeTypes = {
   ".html": "text/html",
